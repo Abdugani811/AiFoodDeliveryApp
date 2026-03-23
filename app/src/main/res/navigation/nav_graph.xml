@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment"
+    android:id="@+id/nav_graph">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.aifooddelivery.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutThisMenuFragment"
+            app:destination="@id/aboutThisMenuFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_myCartFragment"
+            app:destination="@id/myCartFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.aifooddelivery.Fragment.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.aifooddelivery.Fragment.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/aboutThisMenuFragment"
+        android:name="com.example.aifooddelivery.Fragment.AboutThisMenuFragment"
+        android:label="fragment_about_this_menu"
+        tools:layout="@layout/fragment_about_this_menu" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.aifooddelivery.Fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.example.aifooddelivery.Fragment.MyCartFragment"
+        android:label="fragment_my_cart"
+        tools:layout="@layout/fragment_my_cart" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.aifooddelivery.Fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_personalDateFragment"
+            app:destination="@id/personalDateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalDateFragment"
+        android:name="com.example.aifooddelivery.Fragment.PersonalDateFragment"
+        android:label="fragment_personal_date"
+        tools:layout="@layout/fragment_personal_date" />
+</navigation>
