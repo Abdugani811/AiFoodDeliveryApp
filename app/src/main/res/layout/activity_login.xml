@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
     tools:context=".LoginActivity">
 
     <TextView
@@ -63,6 +62,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -93,6 +93,7 @@
         android:drawableStart="@drawable/message"
         android:drawablePadding="12dp"
         android:ems="10"
+        android:textColor="@color/black"
         android:fontFamily="@font/inter_medium"
         android:hint="Password"
         android:inputType="numberPassword"

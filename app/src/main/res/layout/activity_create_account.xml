@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
     tools:context=".CreateAccountActivity">
 
     <TextView
@@ -63,6 +62,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -98,6 +98,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -133,6 +134,7 @@
         android:inputType="numberPassword"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
